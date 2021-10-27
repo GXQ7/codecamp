@@ -3,4 +3,4 @@
 A refresher on Java
 
 ## File IO | Day 1 - 10 
-Check out the code from [here](https://github.com/GXQ7/codecamp/blob/master/Day%201-10%20.md).
+Check out the code from [here](https://github.com/GXQ7/Java100Days/blob/master/Day%201-10.md).
