@@ -1,36 +1,31 @@
-import java.security.NoSuchAlgorithmException;
-
-class LinkedList {
+public class LinkedList {
 	Node head;
 
-	static class Node {
+	public class Node {
 		int data;
 		Node next;
-
 		Node(int d) {
 			data = d;
 			next = null;
 		}
 	}
 
-	public static void main(String[] args) {
-
+	public void driverMethod() {
 		LinkedList llist = new LinkedList();
 		llist.head = new Node(1);
 		Node second = new Node(2);
 		Node third = new Node(3);
-
 		llist.head.next = second;
 		second.next = third;
 		insertNewNode(second, new Node(40));
 		llist.head = insertNodeBeginning(llist.head, new Node(7));
+		llist.deleteNodeWithPosition(llist.head, 0);
 		insertNodeEnd(llist.head, new Node(8));
 		System.out.println();
 		printNodes(llist.head);
-
 	}
 
-	private static void deleteNodeWithPosition(Node list, int position) {
+	public void deleteNodeWithPosition(Node list, int position) {
 		//list is empty
 		if (list == null)
 		return;
@@ -56,13 +51,12 @@ class LinkedList {
 	}
 
 
-	private static Node insertNodeBeginning(Node head, Node newNode){
+	public Node insertNodeBeginning(Node head, Node newNode){
 		newNode.next = head;
 		return newNode;
-
 	}
 
-	private static Node insertNodeEnd(Node list, Node node) {
+	public Node insertNodeEnd(Node list, Node node) {
 		if (list == null)
 			return node;
 		Node temp = list;
@@ -73,7 +67,7 @@ class LinkedList {
 		return list;
 	}
 
-	private static void insertNewNode(Node prevNode, Node newNode) {
+	public void insertNewNode(Node prevNode, Node newNode) {
 
 		if (prevNode == null)
 			return;
@@ -82,7 +76,7 @@ class LinkedList {
 		prevNode.next = newNode;
 	}
 
-	public static void printNodes(Node head) {
+	public void printNodes(Node head) {
 		Node n = head;
 		while (n != null) {
 			System.out.print(n.data + " ");

@@ -36,8 +36,7 @@ public class CircularQueue {
     public int enqueue(int i) {
         size++;
         if (!isFull()) {
-
-            rear = (rear + 1) % size;
+            rear = (rear + 1) % size; //wrap round to front
             queue[rear] = i;
             return i;
         }

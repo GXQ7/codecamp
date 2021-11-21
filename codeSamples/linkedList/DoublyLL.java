@@ -13,13 +13,11 @@ class DoublyLL {
 		}
 	}
 
-	public static void main(String[] args) {
-
+	public void driverMethod() {
 		DoublyLL llist = new DoublyLL();
 		llist.head = new Node(1);
 		insertNewNodeAfter(llist.head, new Node(2));
 		insertNewNodeAfter(llist.head.next, new Node(3));
-
 		llist.head = insertNodeBeginning(llist.head, new Node(7));
 		Node n = new Node(23);
 		insertNodeEnd(llist.head, n);
@@ -27,17 +25,16 @@ class DoublyLL {
 		System.out.println();
 		insertNewNodeBefore(n, new Node(26));
 		printList(llist.head);
-
 	}
 
-	private static Node insertNodeBeginning(Node head, Node newNode) {
+	public Node insertNodeBeginning(Node head, Node newNode) {
 		newNode.next = head;
 		head.previous = newNode;
 		head = newNode;
 		return head;
 	}
 
-	private static Node insertNodeEnd(Node list, Node node) {
+	public Node insertNodeEnd(Node list, Node node) {
 		if (list == null)
 			return node;
 
@@ -51,7 +48,7 @@ class DoublyLL {
 		return list;
 	}
 
-	private static void insertNewNodeAfter(Node prevNode, Node newNode) {
+	public void insertNewNodeAfter(Node prevNode, Node newNode) {
 
 		if (prevNode == null)
 			return;
@@ -67,7 +64,7 @@ class DoublyLL {
 		prevNode.next = newNode;
 	}
 
-	private static void insertNewNodeBefore(Node node, Node newNode){
+	public void insertNewNodeBefore(Node node, Node newNode){
 		if (node == null)
 			return;
 		//set up new node
@@ -79,7 +76,7 @@ class DoublyLL {
 
 	}
 
-	public static void printList(Node head) {
+	public void printList(Node head) {
 		Node n = head;
 		Node last = null;
 		while (n != null) {
