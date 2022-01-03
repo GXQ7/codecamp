@@ -6,7 +6,16 @@ A refresher on Java
 Check out the code from [here](https://github.com/GXQ7/Java100Days/blob/master/Day%201-10.md).
 
 ## Data Structures & Algorithms | Day 11 - 20
-Check out the code from [here](https://github.com/GXQ7/Java100Days/blob/master/Day%2011-20.md).
+
 
 ## Basic Level Problems | Day 21 - 40
-Check out the code from [here](https://github.com/GXQ7/Java100Days/blob/master/Day%2021-40.md).
+
+## Medium Level Problems | Day 41 - 60 
+
+## Hard Level Problems | Day 61 - 75
+
+## System Design | Day 76 - 85
+
+## OS and DBMS | Day 86 - 92
+
+## Object-Oriented Design | Day 93 - 100
