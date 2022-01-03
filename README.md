@@ -6,7 +6,7 @@ A refresher on Java
 Check out the code from [here](https://github.com/GXQ7/Java100Days/blob/master/Day%201-10.md).
 
 ## Data Structures & Algorithms | Day 11 - 20
-
+:white_medium_small_square::white_medium_small_square::white_medium_small_square:
 
 ## Basic Level Problems | Day 21 - 40
 
