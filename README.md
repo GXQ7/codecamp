@@ -11,13 +11,8 @@ Check out the code from [here](https://github.com/GXQ7/Java100Days/blob/master/D
 - [Stacks]()
 - [Queues]()
 - [Linked List]()
-
-### Tree
-- [BST]()
-
-#### Balanced Trees
-- [AVL Tree]()
-
+- [Binary Search Tree]()
+- [AVL Tree - Balanced BST]()
 - [Tries]()
 - [Graphs]()
 - [Hashing]()
