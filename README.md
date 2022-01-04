@@ -7,7 +7,7 @@ Check out the code from [here](https://github.com/GXQ7/Java100Days/blob/master/D
 
 ## Data Structures & Algorithms | Day 11 - 20
 
-- [Arrays]()
+- [Arrays](codeSamples/ArrayExample.java)
 - [Stacks]()
 - [Queues]()
 - [Linked List]()
