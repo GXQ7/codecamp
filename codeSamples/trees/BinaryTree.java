@@ -14,11 +14,11 @@ public class BinaryTree<T extends Comparable<T>> {
     // Keeping track of the number of nodes within the tree
     int nodeCount = 0;
     private class Node {
-        T data;
+        T key;
         Node left, right;
 
-        public Node(T data, Node left, Node right) {
-            this.data = data;
+        public Node(T key, Node left, Node right) {
+            this.key = key;
             this.left = left;
             this.right = right;
         }
@@ -47,7 +47,7 @@ public class BinaryTree<T extends Comparable<T>> {
             return false;
             
         // using a comparator for branching
-        int cmp = value.compareTo(node.data);
+        int cmp = value.compareTo(node.key);
 
         // dig into left subtree
         if (cmp < 0)
@@ -71,7 +71,7 @@ public class BinaryTree<T extends Comparable<T>> {
         if (node == null)
             return new Node(value, null, null);
 
-        int cmp = value.compareTo(node.data);
+        int cmp = value.compareTo(node.key);
 
         // dig into left subtree by calling method with left child as focus node
         if (cmp < 0)
@@ -98,8 +98,8 @@ public class BinaryTree<T extends Comparable<T>> {
 
     private Node deleteRecursive(Node node, T value) {
         // base case - node is null
-        if (node.data == null) return null;
-        int cmp = value.compareTo(node.data);
+        if (node.key == null) return null;
+        int cmp = value.compareTo(node.key);
 
         //find phase
         // dig into left subtree
@@ -118,7 +118,7 @@ public class BinaryTree<T extends Comparable<T>> {
             if (node.left == null){
             Node rightChild = node.right;
             //destroy node
-            node.data = null;
+            node.key = null;
             node = null;
             // return right child
             return rightChild;
@@ -128,7 +128,7 @@ public class BinaryTree<T extends Comparable<T>> {
             if (node.right == null){
                 Node leftChild = node.left;
                 //destroy node
-                node.data = null;
+                node.key = null;
                 node = null;
                 // return right child
                 return leftChild;
@@ -140,10 +140,10 @@ public class BinaryTree<T extends Comparable<T>> {
             Node temp = getMin(node.right);
 
             // copy value to the node to be deleted
-            node.data = temp.data;
+            node.key = temp.key;
 
             //remove original value from right subtree, as this value is now a duplciate
-            node.right = deleteRecursive(node.right, node.data);
+            node.right = deleteRecursive(node.right, node.key);
 
         }
         return node;
@@ -166,7 +166,7 @@ public class BinaryTree<T extends Comparable<T>> {
     //prints before recursive calls
     public void preOrder(Node n) {
         if (n == null) return;
-        System.out.print(n.data + " ");
+        System.out.print(n.key + " ");
         preOrder(n.left);
         preOrder(n.right);
     }
@@ -175,7 +175,7 @@ public class BinaryTree<T extends Comparable<T>> {
     public void inOrder(Node n) {
         if (n == null) return;
         inOrder(n.left);
-        System.out.print(n.data + " ");
+        System.out.print(n.key + " ");
         inOrder(n.right);
     }
 
@@ -184,7 +184,7 @@ public class BinaryTree<T extends Comparable<T>> {
         if (n == null) return;
         preOrder(n.left);
         preOrder(n.right);
-        System.out.print(n.data + " ");
+        System.out.print(n.key + " ");
     }
 
     //BFS - done iteratively with a queue of nodes left to explore
@@ -194,7 +194,7 @@ public class BinaryTree<T extends Comparable<T>> {
 
         while (!nodesLeftToExplore.isEmpty()){
             Node temp = nodesLeftToExplore.element();
-            System.out.print(temp.data + " ");
+            System.out.print(temp.key + " ");
             if (temp.left != null) nodesLeftToExplore.add(temp.left);
             if (temp.right != null) nodesLeftToExplore.add(temp.right);
             nodesLeftToExplore.remove();

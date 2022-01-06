@@ -9,13 +9,32 @@ Check out the code from [here](https://github.com/GXQ7/Java100Days/blob/master/D
 
 - [Arrays](codeSamples/ArrayExample.java)
 - Stacks
+    - [Array Implementation](codeSamples/stack/ArrayStack.java)
+    - [LL Implementation](codeSamples/stack/LinkedListStack.java)
+    - [Java's Stack Class](codeSamples/stack/JavaClassStack.java)
+    - [Array Deque Implementation](codeSamples/stack/DequeStack.java)
 - Queues
     - [Array Implementation](codeSamples\queue\ArrayQueue.java)
     - [Linked List Implementation](codeSamples\queue\LinkedListQueue.java)
-    - [Circular Queue]()
+    - [Circular Queue](codeSamples\queue\CircularQueue.java)
+
+    - Priority Queue
+        - [Array Implementation](codeSamples\queue\ArrayQueue.java)
+        - [LinkedList Implementation](codeSamples\queue\LinkedListQueue.java)
+        - [LikedList w/ Comparable interface](codeSamples\queue\priorityQueueComparable)
+
+    - ArrayDeque
+        - [Circular Deque Array](codeSamples\queue\CircularDeque.java)
+        - [Java Deque Interface](codeSamples\queue\DequeInterface.java)
+
 - Linked List
-- Binary Search Tree
-- AVL Tree - Balanced BST
+    - [Singly LL](codeSamples\linkedList\LinkedList.java)
+    - [Java Interface](codeSamples\linkedList\linkedListJavaInterface.java)
+    - [Doubly LL](codeSamples\linkedList\DoublyLL.java)
+    - [Circular LinkedList](codeSamples\linkedList\CircularLL.java)
+
+- [Binary Search Tree](codeSamples\trees\BinaryTree.java)
+- [AVL Tree - Balanced BST](codeSamples\trees\AVL_Tree.java)
 - [Tries](codeSamples\trees/Trie.java)
 - Graphs
 - Hashing
