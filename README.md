@@ -8,15 +8,18 @@ Check out the code from [here](https://github.com/GXQ7/Java100Days/blob/master/D
 ## Data Structures & Algorithms | Day 11 - 20
 
 - [Arrays](codeSamples/ArrayExample.java)
-- [Stacks]()
-- [Queues]()
-- [Linked List]()
-- [Binary Search Tree]()
-- [AVL Tree - Balanced BST]()
+- Stacks
+- Queues
+    - [Array Implementation](codeSamples\queue\ArrayQueue.java)
+    - [Linked List Implementation](codeSamples\queue\LinkedListQueue.java)
+    - [Circular Queue]()
+- Linked List
+- Binary Search Tree
+- AVL Tree - Balanced BST
 - [Tries](codeSamples\trees/Trie.java)
-- [Graphs]()
-- [Hashing]()
-- [Heaps]()
+- Graphs
+- Hashing
+- Heaps
 
 ## Basic Level Problems | Day 21 - 40
 
