@@ -13,7 +13,7 @@ Check out the code from [here](https://github.com/GXQ7/Java100Days/blob/master/D
 - [Linked List]()
 - [Binary Search Tree]()
 - [AVL Tree - Balanced BST]()
-- [Tries]()
+- [Tries](codeSamples\trees/Trie.java)
 - [Graphs]()
 - [Hashing]()
 - [Heaps]()
